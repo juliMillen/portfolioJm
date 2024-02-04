@@ -1,0 +1,351 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+
+header, section, footer {
+    padding: 50px;
+}
+
+
+section{
+    margin-bottom: 20px;
+}
+
+#inicio {
+    background-image: url(img/pngtree-hacking-child-computer-screen-picture-image_2735813.jpg);
+    background-size: cover;
+    background-position: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #030303;
+    color:#e5f106;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta segun sea necesario */
+}
+
+#inicio h1,h2,h3, #inicio p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideIn 2s ease-out; /* Agrega una animacion llamada "slideIn" de 2 segundos */
+}
+
+/* Define la animacion "slideIn" */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Inicia desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Termina en la posicion normal */
+    }
+}
+/* FIN INICIO */
+
+/* Inicio sobre mi */
+#sobre-mi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+    text-align: center;
+    padding: 5%;
+}
+
+.perfil {
+    flex: 1;
+    padding-right: 5%; 
+    text-align: center;
+}
+
+.perfil img {
+    max-width: 80%;
+    border-radius: 50%;
+    transition: transform 0.5 ease;
+}
+.perfil:hover{
+    transform: translateY(-5px);
+}
+
+.descripcion {
+    background-color: #ffd700;
+    flex: 2;
+    padding-left: 5%;
+    text-align: justify;
+    line-height: 2.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* FIN SOBRE MI */
+
+/* Inicio educacion */
+#educacion {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e1e811;
+    text-align: center;
+}
+
+
+.conteCarrousel{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    margin:0 auto;
+    padding:0;
+    display: flex;
+    gap: 10px;
+    min-height: 100px;
+}
+
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+}
+
+.itemCarrouselTarjeta{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(250, 250, 250);
+    margin-top: 15px;
+}
+
+.itemCarrouselArrows a i{
+    background-color: transparent;
+    font-size: 2em;
+}
+.itemCarrouselArrows  a  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/*FIN CARROUSEL - EDUCACION */
+
+/*Inicio habilidades */
+#habilidades {
+    background-color: #1a1a1a; /* Negro */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e1e811;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre habilidades */
+    max-width: 600px; /* Ajusta segun sea necesario */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.skill {
+    flex: 1 0 40%; /* Ajusta segun sea necesario */
+    background-color: #e5f106; /* Color de fondo de la habilidad */
+    color:black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 5px; /* Margen entre habilidades */
+    transition: transform 0.3 ease;
+}
+.skill:hover{
+    transform: translateY(-5px);
+}
+
+/*Inicio proyectos */
+#proyectos {
+    background-color: #050505; /* rosado */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e1e811;
+    text-align: center;
+}
+
+/*FIN HABILIDADES */
+
+/*Inicio contacto */
+#contacto { 
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; 
+    margin: auto; /* Para centrar el formulario */
+}
+
+#contacto form{
+    width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#040404;
+}
+
+input, textarea, button {
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    width:98%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+form input[type="submit"]{
+	width:93%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+form input[type="text"],
+form input[type="email"]{
+	width:93%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+Button:hover{
+    background-color:#e1e811;
+    transition: 0.3s;
+}
+
+/* FIN CONTACTO */
+
+/*Inicio footer */
+footer {
+    background-color: #1a1a1a; /* Negro */
+    text-align: center;
+    padding:20px;
+}
+
+.copyright-container {
+    margin-bottom: 10px;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.redes-container li {
+    margin-right: 10px;
+}
+
+.redes-container a{
+    color:white;
+}
+
+/* FIN FOOTER */
+
+/* Estilos de la barra de navegacion */
+.navbar {
+    background-color: #080808; /* Color de fondo de la barra de navegacion */
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Cambia el color al pasar el raton */
+}

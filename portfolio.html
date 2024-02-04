@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0cdd9f0c4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("service_9mawvgn");
+</script>
+
+    <title>Portafolio Julian Millen</title>
+</head>
+<body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#educacion">Educacion</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    <header id="inicio" class="circle">
+        <!-- Contenido de la seccion Inicio -->
+        <h1>Bienvenidos a mi portfolio web!</h1>
+        <h2>Mi nombre es Millen Julian</h2>
+        <h3> y soy Programador Jr</h3>
+    </header>
+
+    <section id="sobre-mi">
+        <!-- Contenido de la seccion Sobre Mi -->
+        <div class="perfil">
+            <img src="style/img/foto-perfil.jpg" alt="Foto de perfil">
+        </div>
+        <div class="descripcion">
+         <h1>SOBRE MI</h1>
+         <p>Actualmente me encuentro estudiando la tecnicatura universitaria en Programacion,<br> he hecho algunos cursos de programacion e intento capacitarme constemente.<br>
+         Me considero una persona responsable, optimista e intento adaptarme a los cambios.
+         </p>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <!-- Contenido de la seccion Educacion con el carrousel -->
+        <h1>EDUCACION</h1>
+    <div class="conteCarrousel">
+        <div class="itemCarrousel" id="itemCarrousel-1">
+            <div class="itemCarrouselTarjeta">A</div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-3">
+                    <img src="style/img/certificado-logica.png" alt="Certificado logica y algoritmos todocode">
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-2">
+            <div class="itemCarrouselTarjeta">B</div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-1">
+                    <img src="style/img/certificado-html-y-css.png" alt="Certificado html y Css todocode">
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-3">
+            <div class="itemCarrouselTarjeta">C</div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                    <img class="img" src="style/img/certificado-java-para-principiantes.png" alt="Certificado java para principiantes todocode">
+                </a>
+            </div>
+        </div>
+
+        <div class="itemCarrousel" id="itemCarrousel-4">
+            <div class="itemCarrouselTarjeta">D</div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                    <img class="img" src="style/img/manipulacion-de-datos-en-python.png" alt="Certificado manipulacion de datos en python">
+                </a>
+            </div>
+        </div>
+
+        <div class="itemCarrousel" id="itemCarrousel-5">
+            <div class="itemCarrouselTarjeta">E</div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                    <img class="img" src="style/img/analisis-de-datos-en-power-bi.png" alt="Certificado analisis de datos en power BI">
+                </a>
+            </div>
+        </div>
+
+        <div class="itemCarrousel" id="itemCarrousel-6">
+            <div class="itemCarrouselTarjeta">F</div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                    <img class="img" src="style/img/certificado-excel.png" alt="Certificado de manejo de datos en excel">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="conteCarrouselController">
+        <a href="#itemCarrousel-1"><i class="fa-solid fa-circle"></i></a>
+        <a href="#itemCarrousel-2"><i class="fa-solid fa-circle"></i></a>
+        <a href="#itemCarrousel-3"><i class="fa-solid fa-circle"></i></a>
+        <a href="#itemCarrousel-4"><i class="fa-solid fa-circle"></i></a>
+        <a href="#itemCarrousel-5"><i class="fa-solid fa-circle"></i></a>
+        <a href="#itemCarrousel-6"><i class="fa-solid fa-circle"></i></a>
+    </div>
+    </section>
+
+    <section id="habilidades">
+        <!-- Contenido de la seccion Habilidades con la "tabla" de imagenes -->
+        <h1>HABILIDADES</h1>
+        <div class="skills-container">
+         <div class="skill">C#</div>
+         <div class="skill">JAVA</div>
+         <div class="skill">HTML</div>
+         <div class="skill">CSS</div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <!-- Contenido de la seccion Proyectos -->
+        <h1>Proyectos</h1>
+        <p>Sin proyectos publicados hasta el momento...</p>
+    </section>
+
+    <section id="contacto">
+        <!-- Contenido de la seccion Contacto con el formulario -->
+        <form action="formulario">
+          <input type="text" name="nombre" placeholder="Nombre">
+          <input type="email" name="email" placeholder="Correo Electronico">
+          <textarea name="mensaje" placeholder="Mensaje"></textarea>
+          <button type="submit" onClick=enviarFormulario() class="Button">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <!-- Contenido del footer con enlaces a tus redes sociales -->
+        <div class="copyright-container">
+          <p><i class="fa-regular fa-copyright" >  Copyright Millen Julian Ariel- 2024</p></i>
+         </div>
+         <div class="redes-container">
+            <ul>
+                <li ><a href="https://www.linkedin.com/in/julianmillen/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                  <li ><a href="https://github.com/juliMillen" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                  <li ><a href="https://www.instagram.com/julianmillen/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                  <li ><a href="https://twitter.com/julianmillenn" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+             </ul>
+         </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="jss/javascript.js"></script>
+</body>
+</html>
