@@ -20,7 +20,7 @@ function enviarFormulario() {
         mensaje: document.getElementsByName('mensaje')[0].value
     };
 
-    emailjs.send("service_9mawvgn", "julianmillen1@gmail.com", templateParams)
+    emailjs.send("service_9mawvgn", "julimillen@gmail.com", templateParams)
         .then(function(response) {
             console.log("Mensaje enviado con éxito:", response);
             // redirigir al usuario o mostrar un mensaje de éxito.
