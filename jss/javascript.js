@@ -15,17 +15,17 @@ $(document).ready(function(){
 
 function enviarFormulario() {
     var templateParams = {
-        nombre: document.getElementById('nombre').value,
-        email: document.getElementById('email').value,
-        mensaje: document.getElementById('mensaje').value
+        nombre: document.getElementsByName('nombre')[0].value,
+        email: document.getElementsByName('email')[0].value,
+        mensaje: document.getElementsByName('mensaje')[0].value
     };
 
     emailjs.send("service_9mawvgn", "julianmillen1@gmail.com", templateParams)
         .then(function(response) {
             console.log("Mensaje enviado con éxito:", response);
-            // Puedes redirigir al usuario o mostrar un mensaje de éxito.
+            // redirigir al usuario o mostrar un mensaje de éxito.
         }, function(error) {
             console.error("Error al enviar el mensaje:", error);
-            // Puedes mostrar un mensaje de error al usuario.
+            // mostrar un mensaje de error al usuario.
         });
 }
