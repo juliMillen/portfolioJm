@@ -87,6 +87,34 @@ section{
 
 /* FIN SOBRE MI */
 
+/* Inicio Curriculum */
+#descargarC{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.curriculum{
+    background-color:#ffd700;
+    border: 2px solid #ccc;
+    padding:20px;
+    text-align: center;
+}
+
+.curriculum h1, h4{
+    margin-bottom: 20px;
+    color:#000;
+}
+
+.curriculum i{
+    color: #555;
+    font-size: 36px;
+}
+
+/*Fin curriculum */
+
 /* Inicio educacion */
 #educacion {
     background-color: rgb(0, 0, 0);
@@ -209,6 +237,8 @@ section{
     transform: translateY(-5px);
 }
 
+/* Fin Habilidades */
+
 /*Inicio proyectos */
 #proyectos {
     background-color: #050505; /* rosado */
@@ -221,7 +251,7 @@ section{
     text-align: center;
 }
 
-/*FIN HABILIDADES */
+/*FIN Proyectos */
 
 /*Inicio contacto */
 #contacto { 
@@ -288,6 +318,7 @@ Button:hover{
 
 /*Inicio footer */
 footer {
+    color:#555;
     background-color: #1a1a1a; /* Negro */
     text-align: center;
     padding:20px;
@@ -314,7 +345,7 @@ footer {
 }
 
 .redes-container a{
-    color:white;
+    color:#555;
 }
 
 /* FIN FOOTER */

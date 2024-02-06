@@ -13,6 +13,13 @@ $(document).ready(function(){
 });
 
 
+document.getElementById('downloadLink').addEventListener('click', function(event) {
+    this.href= "style/img/cv-JulianMillen.pdf"
+    //abre el enlace en otra pestaña
+    this.target= "_blank"
+  });
+  
+
 function enviarFormulario() {
     var templateParams = {
         nombre: document.getElementsByName('nombre')[0].value,
